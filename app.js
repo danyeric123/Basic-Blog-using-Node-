@@ -8,7 +8,7 @@ const app = express()
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:true}))
 
-const dbURI = 'mongodb+srv://nodetutorial:613jbs@cluster0.kzlqo.mongodb.net/Node-tutorial?retryWrites=true&w=majority'
+const dbURI = ''
 mongoose.connect(dbURI)
         .then((result)=>app.listen(3000))
         .catch((err)=>console.log(err))
